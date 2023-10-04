@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">color brain training</string>
+    <string name="splash_game_name">COLOR: BRAIN TRAINING</string>
+    <string name="score_note">Your score is</string>
+</resources>
