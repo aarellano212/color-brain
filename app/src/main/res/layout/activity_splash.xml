@@ -16,8 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/logo"
         android:gravity="center_vertical"
-        android:padding="10dp"
-        >
+        android:padding="10dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -28,9 +27,6 @@
             android:textSize="30sp"
             android:textStyle="bold"
             android:background="@drawable/splash_game_name"
-            android:padding="20dp"
-            />
-
-
+            android:padding="20dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

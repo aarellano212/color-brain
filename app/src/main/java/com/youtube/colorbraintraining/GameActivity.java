@@ -18,6 +18,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class GameActivity extends AppCompatActivity {
+    android.widget.ImageButton backButton;
 
     private static final String RED = "red";
     private static final String BLUE = "blue";
@@ -42,7 +43,13 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-
+        backButton = (android.widget.ImageButton)findViewById(R.id.backToGames);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGamePage();
+            }
+        });
         txtQuestion = findViewById(R.id.txt_question);
 
         btnRed = findViewById(R.id.btn_red);
@@ -128,5 +135,9 @@ public class GameActivity extends AppCompatActivity {
                     }
                 }, delay
         );
+    }
+    public void openGamePage(){
+        android.content.Intent intent = new android.content.Intent(this, SplashActivity.class);
+        startActivity(intent);
     }
 }

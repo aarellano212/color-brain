@@ -19,8 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center_vertical"
-            >
+            android:gravity="center_vertical">
 
             <TextView
                 android:id="@+id/txt_question"
@@ -31,15 +30,13 @@
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textSize="48sp"
-                android:textColor="@color/black"
-                />
+                android:textColor="@color/black"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="(Choose the color which is written)"
-                android:textAlignment="center"
-                />
+                android:textAlignment="center"/>
 
             <ProgressBar
                 android:id="@+id/progress_bar"
@@ -47,16 +44,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:progress="100"
-                android:layout_marginTop="10dp"
-                />
+                android:layout_marginTop="10dp"/>
 
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:rowCount="2"
                 app:columnCount="2"
-                android:layout_gravity="center"
-                >
+                android:layout_gravity="center">
 
                 <Button
                     android:id="@+id/btn_red"
@@ -68,8 +63,7 @@
                     android:layout_margin="5dp"
                     android:backgroundTint="@color/red"
                     android:textColor="@color/red"
-                    android:onClick="submitAnswer"
-                    />
+                    android:onClick="submitAnswer"/>
 
                 <Button
                     android:id="@+id/btn_blue"
@@ -81,8 +75,7 @@
                     android:layout_margin="5dp"
                     android:backgroundTint="@color/blue"
                     android:textColor="@color/blue"
-                    android:onClick="submitAnswer"
-                    />
+                    android:onClick="submitAnswer"/>
 
                 <Button
                     android:id="@+id/btn_green"
@@ -94,8 +87,7 @@
                     android:layout_margin="5dp"
                     android:backgroundTint="@color/green"
                     android:textColor="@color/green"
-                    android:onClick="submitAnswer"
-                    />
+                    android:onClick="submitAnswer"/>
 
                 <Button
                     android:id="@+id/btn_yellow"
@@ -107,13 +99,16 @@
                     android:layout_margin="5dp"
                     android:backgroundTint="@color/yellow"
                     android:textColor="@color/yellow"
-                    android:onClick="submitAnswer"
-                    />
+                    android:onClick="submitAnswer"/>
+
+                <ImageButton
+                    android:id="@+id/backToGames"
+                    android:layout_width="136dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    app:srcCompat="@drawable/arrowback" />
             </androidx.gridlayout.widget.GridLayout>
-
-
         </LinearLayout>
-
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
