@@ -28,5 +28,11 @@
             android:textStyle="bold"
             android:background="@drawable/splash_game_name"
             android:padding="20dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
